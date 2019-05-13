@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h1 class="alert alert-danger text-center" >IRON MAN</h1>
+  <div class="text-center"><a class="btn btn-outline-primary " href="https://www.marvel.com/characters/iron-man-tony-stark">marvel profile</a></div>
+  <div class="text-center"><img  class="m-2" src=image.png alt="Iron Man Image" style="width:200px"></div>
+    <p class="alert alert-warning text-center">here is the<a href="https://twitter.com/Iron_Man">twitter link</a></p>
+ <div class="row">
+     <div class="col-6">
+<h1 class="alert alert-danger">Enemies:</h1>
+<ul class="list-group ">
+  <li class="list-group-item active">Mandarian</li>
+  <li class="list-group-item">Brandt</li>
+  <li class="list-group-item">Savin</li>
+  <li class="list-group-item">Thanos</li>
+  <li class="list-group-item">Ultron</li>
+   
+</ul>
+</div>
+<div class="col-6">
+<h1>Top 3 Iron Man Movies:</h1>
+<ol type=1>
+    <li>Iron Man (<span style="color: red"> 2008 </span>)</li>
+    <li>Iron Man 2 (<span style="color: red"> 2010 </span>)</li>
+    <li>Iron Man 3 (<span style="color: red"> 2012 </span></li>
+
+</ol>
+</div>
+</div>
+<h1 style="display :inline ;" > twitter link</h1>
+<img src="src.png" alt="" style="width:400px;">
+<div class="col-md-8 offset-md-2">
+<h1>Registration form</h1>
+<form  action="https://hidden-ridge-64485.herokuapp.com/registration" method="GET">
+<h2  style="display :inline ;">Name</h2>
+<input class="form-control" type="text" name="username" placeholder="username"><br/>
+<h2 style="display :inline ;">Password</h2>
+<input class="form-control" type="password" name="pass"><br/> 
+<h2 style="display :inline ;">Email</h2>
+<input class="form-control" type="email" name="email" placeholder="xyz@gmail.com"><br/>
+<h2 style="display :inline ;">age</h2>
+<input class="form-control" type="number" name="age"> 
+
+<h2>which is your favourite super hero ?</h2>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="superhero" value="superman">
+<label class="form-check-label" for="defaultCheck1">superman
+</label></div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="superhero" value="superman">
+<label class="form-check-label" for="defaultCheck1">spider-man
+</label></div>
+<div class="form-check">
+ <input class="form-check-input" type="radio" name="superhero" value="superman">
+<label class="form-check-label" for="defaultCheck1">batman
+</label></div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="superhero" value="superman">
+<label class="form-check-label" for="defaultCheck1">iron-man
+ </label></div></br>
+<input class="form-control btn-outline-danger" type="submit">
+</form>
+</div>
+<h1>Booking form</h1>
+<form action="https://hidden-ridge-64485.herokuapp.com/booking" method="POST">
+    <select name="movie">
+<option> Avengers</option>
+<option> Avengers-infinity-war</option>
+<option> Avengers-endgame</option>
+    </select><br/>
+    <h2 style="display:inline"> popcorns</h2>
+    <input class="form-control" type="checkbox" name="addon" value="popcorns">
+    <h2 style="display:inline"> beverages</h2>
+    <input class="form-control" type="checkbox" name="addon" value="beverages">
+    <h2 style="display:inline"> chips</h2>
+    <input class="form-control" type="checkbox" name="addon" value="chips"><br/>
+    <input class="form-control btn-outline-danger" type="submit">
+</form>
+<h1>upload selfie</h1>
+<form action="https://hidden-ridge-64485.herokuapp.com/selfie" method="POST" enctype="multipart/form-data">
+    <input class="form-control" type="file" name="file">
+    <input class="form-control btn-outline-danger" type="submit">
+</form>
+</body>
+</html>
